@@ -27,7 +27,7 @@ defimpl Contex.Legend, for: Contex.CategoryColourScale do
 
         [
           rect({0, 18}, {y, y + 18}, "", fill: fill),
-          text(23, y + 9, val, text_anchor: "start", dominant_baseline: "central")
+          text(23, y + 9, Atom.to_string(val), text_anchor: "start", dominant_baseline: "central")
         ]
       end)
 
